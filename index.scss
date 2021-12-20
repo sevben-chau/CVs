@@ -1,10 +1,16 @@
 $color-title: #1f3d61;
 $bg-color: #f2f2f2;
+@font-face {
+  font-family: robotoRegular;
+  src: url(./font/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: robotoRegular;
   body {
     background-color: #bcbdb8;
     color: black;
@@ -19,6 +25,7 @@ $bg-color: #f2f2f2;
       aside {
         width: calc(100% - 77%);
         height: 100%;
+        border-right: 2px solid rgba(0, 0, 0, 0.8);
         .info {
           background-color: $bg-color;
           height: 100%;
@@ -47,7 +54,6 @@ $bg-color: #f2f2f2;
               text-align: center;
               li {
                 border-radius: 15px;
-                width: 143px;
                 height: 50px;
                 margin: 15px 0;
                 display: flex;
@@ -57,32 +63,13 @@ $bg-color: #f2f2f2;
                   margin-right: 8px;
                 }
               }
-              //   li:first-child {
-              //     border: 2px solid #ff5722;
-              //   }
-              li:nth-child(2) {
-                // border: 2px solid #f33052;
+  
+              li:nth-child(2), li:nth-child(5) {
                 & > img {
                   width: 100%;
                   padding: 2px;
                 }
-              }
-              //   li:nth-child(3) {
-              //     border: 2px solid #e4ba42;
-              //   }
-              //   li:nth-child(4) {
-              //     border: 2px solid #00bcd4;
-              //   }
-              li:nth-child(5) {
-                // border: 2px solid #30a6fd;
-                & > img {
-                  width: 100%;
-                  padding: 2px;
-                }
-              }
-              //   li:last-child {
-              //     border: 2px solid #90a389;
-              //   }
+              }           
             }
           }
           .experience {
@@ -107,7 +94,7 @@ $bg-color: #f2f2f2;
     height: 100%;
     width: 100%;
     .item {
-      border: 1px solid rgba(0, 0, 0, 0.8);
+      border: 0;
       padding: 20px;
       font-size: 20px;
       overflow-wrap: anywhere;

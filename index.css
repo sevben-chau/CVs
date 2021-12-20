@@ -1,8 +1,14 @@
+@font-face {
+  font-family: robotoRegular;
+  src: url(./font/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: robotoRegular;
 }
 
 * body {
@@ -25,6 +31,7 @@
 * body .content aside {
   width: calc(100% - 77%);
   height: 100%;
+  border-right: 2px solid rgba(0, 0, 0, 0.8);
 }
 
 * body .content aside .info {
@@ -67,7 +74,6 @@
 
 * body .content article .summary .skills ul li {
   border-radius: 15px;
-  width: 143px;
   height: 50px;
   margin: 15px 0;
   display: -webkit-box;
@@ -81,12 +87,7 @@
   margin-right: 8px;
 }
 
-* body .content article .summary .skills ul li:nth-child(2) > img {
-  width: 100%;
-  padding: 2px;
-}
-
-* body .content article .summary .skills ul li:nth-child(5) > img {
+* body .content article .summary .skills ul li:nth-child(2) > img, * body .content article .summary .skills ul li:nth-child(5) > img {
   width: 100%;
   padding: 2px;
 }
@@ -110,7 +111,7 @@
 }
 
 * .container .item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 0;
   padding: 20px;
   font-size: 20px;
   overflow-wrap: anywhere;
