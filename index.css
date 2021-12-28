@@ -411,21 +411,17 @@
 
 @media only screen and (max-width: 908px) {
   * .container .item {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
 @media only screen and (max-width: 768px) {
   * .content {
     height: auto !important;
-    display: block !important;
-  }
-  * .content .break {
-    display: block !important;
-    height: 35px !important;
   }
   * .content aside {
     width: 100% !important;
+    border: 0 !important;
   }
   * .content aside .info {
     font-size: 1.2em;

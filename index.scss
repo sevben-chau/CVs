@@ -12,6 +12,12 @@ $bg-color: #f2f2f2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: robotoRegular;
+  // .d-flex{
+  //   display: flex;
+  // }
+  // .d-block{
+  //   display: block;
+  // }
   body {
     background-color: #bcbdb8;
     color: black;
@@ -282,13 +288,6 @@ $bg-color: #f2f2f2;
     }
   }
 
-  // @media screen and (max-width: 1440px) {
-  //   .container {
-  //     .item {
-  //       font-size: 0.9em;
-  //     }
-  //   }
-  // }
   @media only screen and (max-width: 1200px) {
     #bg-video {
       display: none;
@@ -316,20 +315,21 @@ $bg-color: #f2f2f2;
   @media only screen and (max-width: 908px) {
     .container {
       .item {
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
     }
   }
   @media only screen and (max-width: 768px) {
     .content {
       height: auto !important;
-      display: block !important;
-      .break {
-        display: block !important;
-        height: 35px !important;
-      }
+      // display: block !important;
+      // .break {
+      //   display: block !important;
+      //   height: 35px !important;
+      // }
       aside {
         width: 100% !important;
+        border: 0 !important;
         .info {
           font-size: 1.2em;
           img {
